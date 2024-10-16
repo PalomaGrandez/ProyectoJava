@@ -2,7 +2,7 @@ package PROYECTO;
 
 public class Cliente {
 
-	private int CodigoCliente;
+	private int Codigo;
 	private String Nombres;
 	private String Apellidos;
 	private String Direccion;
@@ -11,8 +11,8 @@ public class Cliente {
 	
 	
 	
-	public Cliente(String Nombres, String Apellidos, String Direccion, String Telefono, String DNI, int CodigoCliente) {
-		this.CodigoCliente = CodigoCliente;
+	public Cliente(int Codigo ,String Nombres, String Apellidos, String Direccion, String Telefono, String DNI) {
+		this.Codigo = Codigo;
 		this.Nombres = Nombres;
 		this.Apellidos = Apellidos;
 		this.Direccion = Direccion;
@@ -24,12 +24,12 @@ public class Cliente {
 		
 	}
 
-	public int getCodigoCliente() {
-		return CodigoCliente;
+	public int getCodigo() {
+		return Codigo;
 	}
 
-	public void setCodigoCliente(int codigoCliente) {
-		CodigoCliente = codigoCliente;
+	public void setCodigo(int Codigo) {
+		this.Codigo = Codigo;
 	}
 
 	public String getNombres() {
@@ -73,6 +73,12 @@ public class Cliente {
 	}
 
 	
+	@Override
+	public String toString() {
+		return "Cliente [Codigo=" + Codigo + ", Nombres=" + Nombres + ", Apellidos=" + Apellidos + ", Direccion="
+				+ Direccion + ", Telefono=" + Telefono + ", DNI=" + DNI + "]";
+	}
+
 	
 	
 	

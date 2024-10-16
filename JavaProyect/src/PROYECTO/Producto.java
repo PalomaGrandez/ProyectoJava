@@ -2,8 +2,8 @@ package PROYECTO;
 
 public class Producto {
 
-	
-	private int CodigoProducto;
+
+	private int Codigo;
 	private String Nombre;
 	private double Precio;
 	private int StockActual;
@@ -11,8 +11,8 @@ public class Producto {
 	private int StockMaximo;
 	
 	
-	public Producto(int CodigoProducto, String Nombre, double Precio, int StockActual, int StockMinimo, int StockMaximo) {
-		this.CodigoProducto = CodigoProducto;
+	public Producto(int Codigo, String Nombre, double Precio, int StockActual, int StockMinimo, int StockMaximo) {
+		this.Codigo = Codigo;
 		this.Nombre = Nombre;
 		this.Precio = Precio;
 		this.StockActual = StockActual;
@@ -26,12 +26,12 @@ public class Producto {
 		
 	}
 
-	public int getCodigoProducto() {
-		return CodigoProducto;
+	public int getCodigo() {
+		return Codigo;
 	}
 
-	public void setCodigoProducto(int codigoProducto) {
-		CodigoProducto = codigoProducto;
+	public void setCodigoProducto(int Codigo) {
+		Codigo = Codigo;
 	}
 
 	public String getNombre() {
